@@ -18,7 +18,7 @@
     * (4,    "IV"),
     * (1,    "I")
 
-2. Though the program can support conversion of Arabic to Roman numbers, I've restricted user input from 1 to 3999, as mentioned on wikipedia page. If required the upper limit can be lift off (***Wikipedia Text:*** In the absence of standard symbols for 5,000 and 10,000 the pattern breaks down at this point - in modern usage M is repeated up to three times. The Romans had several ways to indicate larger numbers, but for practical purposes Roman Numerals for numbers larger than 3,999 are seldom if ever used nowadays)
+2. I've assumed the user input from 1 to 3999, as mentioned on wikipedia page. If required the upper limit can be lift off (***Wikipedia Text:*** In the absence of standard symbols for 5,000 and 10,000 the pattern breaks down at this point - in modern usage M is repeated up to three times. The Romans had several ways to indicate larger numbers, but for practical purposes Roman Numerals for numbers larger than 3,999 are seldom if ever used nowadays)
 
 3. **Special Values**: Special values like 0, fractions and decimals are ignored in conversion. The input can only be in the integer format between 1 and 3999. 
 
