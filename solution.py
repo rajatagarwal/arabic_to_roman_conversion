@@ -17,14 +17,14 @@ base_conversions = [
 ]
 
 
-def encode_roman(arabic_number):
+def encode_roman(input_number):
 	roman_value = ""
 
-	while arabic_number > 0:
+	while input_number > 0:
 		for base_arabic, base_roman  in base_conversions:
-			while arabic_number >= base_arabic:
+			while input_number >= base_arabic:
 				roman_value += base_roman
-				arabic_number -= base_arabic
+				input_number -= base_arabic
 	return roman_value
 
 

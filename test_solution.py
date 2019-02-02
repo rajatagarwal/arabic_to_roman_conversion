@@ -1,7 +1,7 @@
 import unittest
 import solution
 
-# 20 random arabic to roman converted true values 
+# 20 random arabic to roman converted values
 correct_values = (
     (2780, 'MMDCCLXXX'),
     (1703, 'MDCCIII'),
@@ -28,32 +28,28 @@ correct_values = (
 
 class TestArabicToRomanConversion(unittest.TestCase):
 
+    # Test Arabic to Roman logic
+    def test_encode_roman_logic(self):
+        for arabic, roman in correct_values:
+            self.assertEqual(solution.encode_roman(arabic), roman)
 
-	def test_encode_roman_logic(self):
-		# Matches Roman value from the function with known Roman values for the Arabic Numbers
-		for arabic, roman in correct_values:
-			self.assertEqual(solution.encode_roman(arabic), roman)
+    # Test Negative value as input
+    def test_negative_or_zero_as_user_input(self):
+        self.assertEqual(solution.user_input(-3), None)
+        self.assertEqual(solution.user_input(0), None)
 
-	
-	def test_negative_or_zero_input(self):
-		# Returns None with anything smaller than 1
-		self.assertEqual(solution.user_input(-3), None)
+    # Test larger than 3,999 input
+    def test_larger_than_3999_as_user_input(self):
+        self.assertEqual(solution.user_input(4000), None)
 
+    # Test random string input
+    def test_string_as_user_input(self):
+        self.assertEqual(solution.user_input("a"), None)
 
-	def test_larger_than_3999_input(self):
-		# Returns None with anything larger than 3999
-		self.assertEqual(solution.user_input(4000), None)
-
-
-	def test_garbage_user_input(self):
-		# Returns None for string input
-		self.assertEqual(solution.user_input("a"), None)
-
-
-	def test_float_input(self):
-		# Returns None for float input
-		self.assertEqual(solution.user_input(2.2), None)
+    # Test floating point input
+    def test_float_as_user_input(self):
+        self.assertEqual(solution.user_input(2.2), None)
 
 
 if __name__ == "__main__":
-	unittest.main()
+    unittest.main()
