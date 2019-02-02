@@ -34,7 +34,7 @@ Project contains 2 python files:
 1. **Python Version**: 3.6.4
 2. **OS**: Windows 10 Pro
 
-There are 2 easy ways to run the project using commandline.
+There are 2 easy ways to run the project using commandline. Either one of the below approach should work fine.
 1. Running "solution.py":
     * python solution.py - 
       It will ask you to enter any decimal number. You're expected to give between 1 to 3,999 but you're free to enter anything as it covers error handling.
