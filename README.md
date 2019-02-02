@@ -31,8 +31,8 @@ Project contains 2 python files:
 
 # Execution Instructions:
 
-1. Python Version: 3.6.4
-2. OS: Windows 10 Pro
+1. **Python Version**: 3.6.4
+2. **OS**: Windows 10 Pro
 
 There are 2 easy ways to run the project using commandline.
 1. Running "solution.py":
