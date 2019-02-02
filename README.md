@@ -40,7 +40,7 @@ There are 2 easy ways to run the project using commandline. Either one of the be
       It will ask you to enter any decimal number. You're expected to give between 1 to 3,999 but you're free to enter anything as it covers error handling.
 2. Running "test_solution.py":
    * python test_solution.py - 
-        It runs pre-made test cases + it will check failed input type as such negative values, 0 as input, larger than 3,999 values, floating point number and any string value as input.
+        It runs 20 pre-made test cases + it will check failed input type as such negative values, 0 as input, larger than 3,999 values, floating point number and any string value as input.
 
 
 
