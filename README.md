@@ -35,10 +35,10 @@ Project contains 2 python files:
 2. **OS**: Windows 10 Pro
 
 There are 2 easy ways to run the project using commandline. Either one of the below approach should work fine.
-1. Running "solution.py":
+1. **Running "solution.py"**:
     * python solution.py - 
       It will ask you to enter any decimal number. You're expected to give between 1 to 3,999 but you're free to enter anything as it covers error handling.
-2. Running "test_solution.py":
+2. **Running "test_solution.py"**:
    * python test_solution.py - 
         It runs 20 pre-made test cases + it will check failed input type as such negative values, 0 as input, larger than 3,999 values, floating point number and any string value as input.
 
